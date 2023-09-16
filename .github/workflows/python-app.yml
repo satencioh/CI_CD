@@ -4,9 +4,8 @@
 name: Sandy Python application
 
 on:
-  pull_request:
-    branches:
-    - main
+  schedule:
+  - cron: "*/2 * * * *"
 
 permissions:
   contents: read
